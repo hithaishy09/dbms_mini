@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
+  /* background-image: url('download.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 250px; */
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 50px;
+  
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  color: black;
+  margin-right: 5px;
+}
+
+.topnav a:hover {
+  background-color: rgba(221, 221, 221, 0.575);
+  color: black;
+}
+
+.active {
+  background-color: #ddd;
+  /* background-color: dimgrey; */
+  color: #ddd;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.topnav .icon {
+  display: none;
+}
+.top{
+    width: auto;
+    height: 25%;
+    background-color: black;
+    color: #ddd;
+    padding: 0;
+    margin: 0;
+}
+.info{
+  margin-top: 50px;
+}
+.w3-container{
+    margin-bottom:25px ;
+    padding: 5px 18px;
+    border-style:solid;
+    border-color: rgb(12, 12, 12);
+    background-color: gray;
+
+  }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+}
+</style>
+</head>
+<body>
+<div class="top" style="text-align:center; margin:0;padding-top: 10px;padding-bottom:10px"><h1>INFINITY TOWER</h1></div>
+<div class="topnav" id="myTopnav">
+  <a href="home.html" >Home</a>
+  <a href="#bills"class="active">Bills</a>
+  <a href="event.html">Events</a>
+  
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="info">
+
+<div style="margin:50px 50px 50px 50px;">
+  <div class="w3-container" style="background-color:#ddd; border:none">
+    <img src="download.png" style="float: left;" alt="">
+    <!-- <p style="float:right"><h1>HOUSE NAME: SOWJANYA</h1></p> -->
+  </div>
+  <div class="w3-container">RENT:20,000</div>
+  <div class="w3-container">WATER BILL: 2000</div>
+  <div class="w3-container">ELECTRICITY BILL: 1500</div>
+  <div class="w3-container">MAINTAINANCE : 10000</div>
+  <!-- <div class="w3-container">NAME: HITHAISHY</div>
+  <div class="w3-container">NAME: HITHAISHY</div>
+  <div class="w3-container">NAME: HITHAISHY</div>
+  <div class="w3-container">NAME: HITHAISHY</div>
+  <div class="w3-container">NAME: HITHAISHY</div> -->
+</div>
+
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
